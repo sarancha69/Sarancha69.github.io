@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Для тебя</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #020617;
+      color: #e5e7eb;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .box {
+      max-width: 420px;
+      width: 100%;
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+    }
+    button {
+      margin-top: 16px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      font-size: 16px;
+    }
+    .hidden {
+      display: none;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>С Новым годом 🎄</h1>
+    <p>
+      Даже на расстоянии ты для меня очень важный человек.
+      Я рад, что ты есть в моей жизни.
+    </p>
+
+    <button onclick="show()">Нажми сюда</button>
+
+    <div id="secret" class="hidden">
+      <p>
+        Пусть в следующем году у тебя будет больше
+        спокойных дней, смеха и уверенности в себе.
+        А я постараюсь быть рядом настолько, насколько могу.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function show() {
+      document.getElementById('secret').style.display = 'block';
+    }
+  </script>
+
+</body>
+  </html>
